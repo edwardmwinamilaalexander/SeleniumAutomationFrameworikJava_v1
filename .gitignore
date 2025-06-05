@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.tmp
+
+# IDEs
+.classpath
+.project
+.settings/
+
+# Build
+target/
+bin/
+
+# Test output
+test-output/
+reports/
+screenshots/
