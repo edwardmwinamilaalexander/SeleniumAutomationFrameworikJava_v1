@@ -1,30 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-05T13:46:53 BST" name="Surefire suite" finished-at="2025-06-05T13:47:01 BST" duration-ms="8173">
+  <suite started-at="2025-06-06T18:00:39 BST" name="Surefire suite" finished-at="2025-06-06T18:01:23 BST" duration-ms="43962">
     <groups>
     </groups>
-    <test started-at="2025-06-05T13:46:53 BST" name="Surefire test" finished-at="2025-06-05T13:47:01 BST" duration-ms="8173">
-      <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@56de5251]" started-at="2025-06-05T13:46:53 BST" name="setUp" finished-at="2025-06-05T13:47:00 BST" duration-ms="7038" status="PASS">
+    <test started-at="2025-06-06T18:00:39 BST" name="Surefire test" finished-at="2025-06-06T18:01:23 BST" duration-ms="43962">
+      <class name="tests.CartPageTest">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.CartPageTest@3c130745]" started-at="2025-06-06T18:00:39 BST" name="setupReport" finished-at="2025-06-06T18:00:39 BST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartPageTest@3c130745]" started-at="2025-06-06T18:00:39 BST" name="setUp" finished-at="2025-06-06T18:00:43 BST" duration-ms="3228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidLogin()[pri:0, instance:tests.LoginTest@56de5251]" started-at="2025-06-05T13:47:00 BST" name="testValidLogin" finished-at="2025-06-05T13:47:01 BST" duration-ms="445" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="testCart()[pri:0, instance:tests.CartPageTest@3c130745]" started-at="2025-06-06T18:00:43 BST" name="testCart" finished-at="2025-06-06T18:00:47 BST" duration-ms="4212" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[expected [Dashboard / nopCommerce administration] but found [nopCommerce demo store. Login]]]>
+              <![CDATA[element click intercepted: Element <a href="https://edkofashion.com/checkout/" class="checkout-button button alt wc-forward">...</a> is not clickable at point (776, 500). Other element would receive the click: <div class="woocommerce">...</div>
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0a41cea07ae6b9abcbbbcb4f2739565, clickElement {id=f.45352C0EC6FDCFAD84A7FDB6AB22EE32.d.38CDE7BA3BA81022D73A039DD7DB5707.e.78}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Edward\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59573}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59573/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d0a41cea07ae6b9abcbbbcb4f2739565)] -> css selector: .checkout-button.button.alt.wc-forward]
+Session ID: d0a41cea07ae6b9abcbbbcb4f2739565]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Dashboard / nopCommerce administration] but found [nopCommerce demo store. Login]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at tests.LoginTest.testValidLogin(LoginTest.java:17)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="https://edkofashion.com/checkout/" class="checkout-button button alt wc-forward">...</a> is not clickable at point (776, 500). Other element would receive the click: <div class="woocommerce">...</div>
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0a41cea07ae6b9abcbbbcb4f2739565, clickElement {id=f.45352C0EC6FDCFAD84A7FDB6AB22EE32.d.38CDE7BA3BA81022D73A039DD7DB5707.e.78}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Edward\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59573}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59573/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d0a41cea07ae6b9abcbbbcb4f2739565)] -> css selector: .checkout-button.button.alt.wc-forward]
+Session ID: d0a41cea07ae6b9abcbbbcb4f2739565
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pages.CartPage.clickOnProceedToCheckOut(CartPage.java:58)
+at tests.CartPageTest.testCart(CartPageTest.java:47)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -49,8 +76,8 @@ at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
 at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
 at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
@@ -58,15 +85,164 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@56de5251]" started-at="2025-06-05T13:47:01 BST" name="tearDown" finished-at="2025-06-05T13:47:01 BST" duration-ms="509" status="PASS">
+        </test-method> <!-- testCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CartPageTest@3c130745]" started-at="2025-06-06T18:00:47 BST" name="tearDown" finished-at="2025-06-06T18:00:47 BST" duration-ms="432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCart status=FAILURE method=CartPageTest.testCart()[pri:0, instance:tests.CartPageTest@3c130745] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.LoginTest -->
+        <test-method is-config="true" signature="teardownReport()[pri:0, instance:tests.CartPageTest@3c130745]" started-at="2025-06-06T18:01:23 BST" name="teardownReport" finished-at="2025-06-06T18:01:24 BST" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownReport -->
+      </class> <!-- tests.CartPageTest -->
+      <class name="tests.ShopPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ShopPageTest@2e4b8173]" started-at="2025-06-06T18:01:20 BST" name="setUp" finished-at="2025-06-06T18:01:21 BST" duration-ms="1898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testShop()[pri:0, instance:tests.ShopPageTest@2e4b8173]" started-at="2025-06-06T18:01:21 BST" name="testShop" finished-at="2025-06-06T18:01:23 BST" duration-ms="1545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testShop -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.ShopPageTest@2e4b8173]" started-at="2025-06-06T18:01:23 BST" name="tearDown" finished-at="2025-06-06T18:01:23 BST" duration-ms="272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testShop status=SUCCESS method=ShopPageTest.testShop()[pri:0, instance:tests.ShopPageTest@2e4b8173] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ShopPageTest -->
+      <class name="tests.CheckOutPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CheckOutPageTest@3e92efc3]" started-at="2025-06-06T18:00:47 BST" name="setUp" finished-at="2025-06-06T18:00:49 BST" duration-ms="1778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCheckOut()[pri:0, instance:tests.CheckOutPageTest@3e92efc3]" started-at="2025-06-06T18:00:49 BST" name="testCheckOut" finished-at="2025-06-06T18:01:13 BST" duration-ms="24126" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //p[@class='woocommerce-thankyou-order-received'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Edward\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59596}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59596/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 96e3d8725523ec499511394a85c91829]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[@class='woocommerce-thankyou-order-received'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Edward\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59596}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59596/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 96e3d8725523ec499511394a85c91829
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.CheckOutPage.getOrderReceivedSuccessMessage(CheckOutPage.java:77)
+at tests.CheckOutPageTest.testCheckOut(CheckOutPageTest.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckOut -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CheckOutPageTest@3e92efc3]" started-at="2025-06-06T18:01:13 BST" name="tearDown" finished-at="2025-06-06T18:01:14 BST" duration-ms="428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheckOut status=FAILURE method=CheckOutPageTest.testCheckOut()[pri:0, instance:tests.CheckOutPageTest@3e92efc3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CheckOutPageTest -->
+      <class name="tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPageTest@1622f1b]" started-at="2025-06-06T18:01:14 BST" name="setUp" finished-at="2025-06-06T18:01:15 BST" duration-ms="1588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin()[pri:0, instance:tests.LoginPageTest@1622f1b]" started-at="2025-06-06T18:01:15 BST" name="testValidLogin" finished-at="2025-06-06T18:01:16 BST" duration-ms="1150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@1622f1b]" started-at="2025-06-06T18:01:16 BST" name="tearDown" finished-at="2025-06-06T18:01:17 BST" duration-ms="275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=LoginPageTest.testValidLogin()[pri:0, instance:tests.LoginPageTest@1622f1b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginPageTest -->
+      <class name="tests.MyAccountPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.MyAccountPageTest@72a7c7e0]" started-at="2025-06-06T18:01:17 BST" name="setUp" finished-at="2025-06-06T18:01:18 BST" duration-ms="1602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMyaccount()[pri:0, instance:tests.MyAccountPageTest@72a7c7e0]" started-at="2025-06-06T18:01:18 BST" name="testMyaccount" finished-at="2025-06-06T18:01:19 BST" duration-ms="1098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMyaccount -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.MyAccountPageTest@72a7c7e0]" started-at="2025-06-06T18:01:19 BST" name="tearDown" finished-at="2025-06-06T18:01:20 BST" duration-ms="256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMyaccount status=SUCCESS method=MyAccountPageTest.testMyaccount()[pri:0, instance:tests.MyAccountPageTest@72a7c7e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.MyAccountPageTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

@@ -1,7 +1,13 @@
-<suite name="LoginSuite">
-<test name="LoginTest">
-<classes>
-<class name="tests.LoginTest"/>
-</classes>
+<suite name="E2ESuite">
+ <test name="E2ETest">
+  <classes>
+   <class name="tests.LoginPageTest"/>
+   <class name="tests.MyAccountPageTest"/>
+   <class name="tests.ShopPageTest"/>
+   <class name="tests.CartPageTest"/>
+   <class name="tests.CheckOutPageTest"/>
+   
+   
+  </classes>
 </test> 
 </suite> 

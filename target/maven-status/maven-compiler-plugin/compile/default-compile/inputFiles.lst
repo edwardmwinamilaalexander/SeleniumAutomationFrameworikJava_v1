@@ -1,4 +1,9 @@
 C:\Users\Edward\eclipse-workspace\selenium-java-framework\src\main\java\base\BaseTest.java
+C:\Users\Edward\eclipse-workspace\selenium-java-framework\src\main\java\pages\CartPage.java
+C:\Users\Edward\eclipse-workspace\selenium-java-framework\src\main\java\pages\CheckOutPage.java
 C:\Users\Edward\eclipse-workspace\selenium-java-framework\src\main\java\pages\LoginPage.java
+C:\Users\Edward\eclipse-workspace\selenium-java-framework\src\main\java\pages\MyAccountPage.java
+C:\Users\Edward\eclipse-workspace\selenium-java-framework\src\main\java\pages\ShopPage.java
 C:\Users\Edward\eclipse-workspace\selenium-java-framework\src\main\java\utils\ConfigReader.java
+C:\Users\Edward\eclipse-workspace\selenium-java-framework\src\main\java\utils\ExtentReportManager.java
 C:\Users\Edward\eclipse-workspace\selenium-java-framework\src\main\java\utils\Log.java

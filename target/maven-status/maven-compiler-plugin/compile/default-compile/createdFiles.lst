@@ -1,0 +1,9 @@
+pages\LoginPage.class
+pages\CartPage.class
+pages\ShopPage.class
+utils\ExtentReportManager.class
+utils\ConfigReader.class
+base\BaseTest.class
+utils\Log.class
+pages\CheckOutPage.class
+pages\MyAccountPage.class

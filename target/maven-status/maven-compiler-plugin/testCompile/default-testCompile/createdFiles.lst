@@ -1,0 +1,5 @@
+tests\LoginPageTest.class
+tests\CartPageTest.class
+tests\CheckOutPageTest.class
+tests\ShopPageTest.class
+tests\MyAccountPageTest.class
